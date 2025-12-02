@@ -1,0 +1,199 @@
+.section-secondary{
+  background-image: url(../assets/pricing-background.png);
+  background-size: contain;
+  overflow: hidden;
+}
+
+.price-container {
+  display: flex;
+  flex-flow:row;
+  justify-content:start;
+  gap: 1rem;
+  margin-left: 3.25rem;
+  overflow: hidden;
+
+ 
+    & > div:nth-child(2) {
+
+      & ul li::before {
+      content: "";
+      background-image: url(../assets/Vector-pink.svg);
+      background-size:cover;
+      background-repeat: no-repeat;
+  
+     width: 1.5rem;
+     height: 1.5rem;
+     position: absolute;
+     left: 0;
+     top: 50%;
+     transform: translateY(-50%);
+}
+   }
+   
+
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--shape-stroke);
+  width: 17rem;
+  height: 25rem;
+  border-radius: 1.5rem;
+  background-color: var(--shape-base);
+  padding: 2rem;
+  
+  & a {
+    color: var(--blue-light);
+  }
+  & h2 {
+    
+    color: var(--text-title);
+  }
+  
+  & .total-price {
+    display: inline;
+    color: var(--text-label);
+    margin-top: 0.5rem;
+    margin-bottom: auto;
+  }
+
+  & ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  gap: 0.75rem;
+  align-items: center;
+  
+& li {
+  color:var(--text-body);
+  position: relative;
+  padding-left: 1.5rem;  
+  white-space: nowrap;
+
+}
+}
+
+& ul li::before {
+  content: "";
+  background-image: url(../assets/Vector-ul.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  
+}
+
+
+@media (min-width: 80rem) {
+.section-secondary{
+  width: 90rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  padding-top: 5.8rem;
+  margin-bottom: 6.5rem;
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65.625rem;
+  height: 40rem;
+  position: relative;
+
+   & > div:nth-child(1) {
+    z-index: 0;
+    position: absolute;
+    animation: expand1 1s ease forwards;
+   }
+    & > div:nth-child(2) {
+      z-index: 1;
+    position: absolute;
+    animation: expand2 1s ease forwards;
+
+
+
+   }
+    & > div:nth-child(3) {
+      z-index: 0;
+    position: absolute;
+   animation: expand3 1s ease forwards;
+
+
+  }
+
+}
+
+.price {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1.75rem;
+  padding-top: 2rem;
+}
+
+.price-mensal {
+
+  & a:nth-of-type(1){
+    position: absolute;
+    left:-4.6rem;
+    top: -4rem;
+    
+    & img {
+    width: 5.62rem;
+    }
+  }
+
+  & a:nth-of-type(2){
+    position: absolute;
+    left:-5.5rem;
+    top: -1rem;
+    & img {
+      width: 3.82rem;
+    }
+  }
+}
+.price-semestral {
+
+  & a:nth-of-type(1){
+    position: absolute;
+    left: 2rem;
+    top: -3.25rem;
+    
+    & img {
+    width: 2.85rem;
+    }
+  }
+}
+.price-anual {
+
+      & a:nth-of-type(3){
+    position: absolute;
+    right:-4.6rem;
+    bottom: -4rem;
+    
+    & img {
+    width: 5.62rem;
+    }
+  }
+
+  & a:nth-of-type(4){
+    position: absolute;
+    right:-5.5rem;
+    bottom: -1rem;
+    & img {
+      width: 3.82rem;
+    }
+  }
+    
+
+}
+
+}

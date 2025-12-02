@@ -1,0 +1,55 @@
+.book-hover{
+  transition: 2s ease;
+}
+
+.book-hover:hover figure:nth-of-type(1) {
+  transform: translateX(-9.25rem) translateY(-4.25rem) scale(1.2);
+}
+
+.book-hover:hover figure:nth-of-type(2) {
+  transform: translateX(-8.25rem) translateY(1.75rem) scale(1.2);
+}
+
+.book-hover:hover figure:nth-of-type(3) {
+  transform: rotate(15deg) translateX(3.5rem) translateY(-3.25rem) scale(1.2);
+}
+
+.book-hover:hover figure:nth-of-type(4) {
+  transform: rotate(25deg) translateX(140px) translateY(-20px) scale(1.2);
+}
+
+.book-hover:hover figure:nth-of-type(5) {
+  transform: translateX(4.5rem) translateY(5.8rem) scale(1.2);
+}
+
+@media (min-width: 80rem) {
+
+  .book-hover{
+    transition: 2s ease;
+  }
+
+  .book-hover:hover figure:nth-of-type(1) {
+    transform: translateX(-19rem) translateY(-3.25rem) scale(1.2);
+  }
+
+  .book-hover:hover figure:nth-of-type(2) {
+    transform: translateX(-19rem) translateY(5.25rem) scale(1.2);
+  }
+
+  .book-hover:hover figure:nth-of-type(3) {
+    transform: rotate(15deg) translateX(11.75rem) translateY(-15.4rem) scale(1.2);
+  }
+
+  .book-hover:hover figure:nth-of-type(4) {
+    transform: rotate(30deg) translateX(24.25rem) translateY(-12.25rem) scale(1.2);
+  }
+
+  .book-hover:hover figure:nth-of-type(5) {
+    transform: translateX(13.5rem) translateY(10.25rem) scale(1.2);
+  }
+
+  .book-hover:hover figure:nth-of-type(5) span {
+    transform: scale(1);
+  }
+
+}

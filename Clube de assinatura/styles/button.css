@@ -1,0 +1,140 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pink-dark);
+  width: 5.5625rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  color: var(--text-title);
+  position: relative;
+  overflow: hidden;
+
+  &.button span{
+    position: relative;
+    z-index: 1; 
+    white-space: nowrap;
+  }
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 0;
+  height: 0;
+  background-color: var(--pink-base);
+  border-radius: 50%;
+  transition: transform 0.7s, width 0.5s, height 0.5s;
+}
+
+.button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  width: 200%;
+  height: 200%;
+}
+
+
+.btn-sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-dark);
+  width: 13rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  color: var(--text-title);
+  position: relative;
+  overflow: hidden;
+
+  & span{
+    position: relative;
+    z-index: 1; 
+    white-space: nowrap;
+  }
+
+  &::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 0;
+  height: 0;
+  background-color: var(--blue-base);
+  border-radius: 50%;
+  transition: transform 0.7s, width 0.5s, height 0.5s;
+}
+
+&:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  width: 200%;
+  height: 200%;
+}
+
+}
+
+.btn-anual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pink-dark);
+  width: 13rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  color: var(--text-title);
+  position: relative;
+  overflow: hidden;
+
+  & span{
+    position: relative;
+    z-index: 1; 
+    white-space: nowrap;
+  }
+
+  &::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 0;
+  height: 0;
+  background-color: var(--pink-base);
+  border-radius: 50%;
+  transition: transform 0.7s, width 0.5s, height 0.5s;
+}
+
+&:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  width: 200%;
+  height: 200%;
+}
+
+}
+
+.btn-link{
+transition: 0.8s;
+cursor: pointer;
+
+  &:hover {
+  color: var(--text-body);
+}
+}
+
+.link-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.8s;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: var(--blue-low);
+    border-radius: 50%;
+  }
+}
